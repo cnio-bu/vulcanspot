@@ -8,3 +8,5 @@ This folder contains the molecular profiles of cancer cell lines in the raw and 
 | `CCLE_DepMap_18Q2_RNAseq_reads_20180502.gct` | CCLE RNAseq gene expression data (read count) |
 | `portal-Avana-2018-05-10.csv` | CERES inferred gene effect matrix (Meyers et al. 2017) |
 | `portal-RNAi_merged-2018-05-10.csv` | DEMETER2 inferred gene dependency scores (McFarland et al. 2018) |
+
+The latest two files data access are now depreated. You can find a mirror of the original data at https://figshare.com/s/1c2f1319b7c95067fad6
