@@ -1,0 +1,557 @@
+Gene	Tumor_type	Significance	Tumor_type
+FLT3	AML	Highly significantly mutated	Acute myeloid leukemia
+DNMT3A	AML	Highly significantly mutated	Acute myeloid leukemia
+NPM1	AML	Highly significantly mutated	Acute myeloid leukemia
+IDH2	AML	Highly significantly mutated	Acute myeloid leukemia
+IDH1	AML	Highly significantly mutated	Acute myeloid leukemia
+TET2	AML	Highly significantly mutated	Acute myeloid leukemia
+RUNX1	AML	Highly significantly mutated	Acute myeloid leukemia
+TP53	AML	Highly significantly mutated	Acute myeloid leukemia
+NRAS	AML	Highly significantly mutated	Acute myeloid leukemia
+WT1	AML	Highly significantly mutated	Acute myeloid leukemia
+PTPN11	AML	Highly significantly mutated	Acute myeloid leukemia
+U2AF1	AML	Highly significantly mutated	Acute myeloid leukemia
+KRAS	AML	Highly significantly mutated	Acute myeloid leukemia
+KIT	AML	Highly significantly mutated	Acute myeloid leukemia
+SMC3	AML	Highly significantly mutated	Acute myeloid leukemia
+STAG2	AML	Highly significantly mutated	Acute myeloid leukemia
+CEBPA	AML	Significantly mutated	Acute myeloid leukemia
+SMC1A	AML	Significantly mutated	Acute myeloid leukemia
+PHF6	AML	Significantly mutated	Acute myeloid leukemia
+RAD21	AML	Significantly mutated	Acute myeloid leukemia
+ASXL1	AML	Significantly mutated	Acute myeloid leukemia
+SFRS2	AML	Significantly mutated	Acute myeloid leukemia
+PAPD5	AML	Significantly mutated	Acute myeloid leukemia
+EZH2	AML	Significantly mutated	Acute myeloid leukemia
+MXRA5	AML	Significantly mutated	Acute myeloid leukemia
+PDSS2	AML	Significantly mutated	Acute myeloid leukemia
+GATA2	AML	Near significance	Acute myeloid leukemia
+KDM6A	AML	Near significance	Acute myeloid leukemia
+TYW1	AML	Near significance	Acute myeloid leukemia
+RBBP4	AML	Near significance	Acute myeloid leukemia
+TP53	BLCA	Highly significantly mutated	Bladder cancer
+KDM6A	BLCA	Highly significantly mutated	Bladder cancer
+MLL2	BLCA	Highly significantly mutated	Bladder cancer
+ARID1A	BLCA	Highly significantly mutated	Bladder cancer
+PIK3CA	BLCA	Highly significantly mutated	Bladder cancer
+RB1	BLCA	Highly significantly mutated	Bladder cancer
+CDKN1A	BLCA	Highly significantly mutated	Bladder cancer
+ERCC2	BLCA	Highly significantly mutated	Bladder cancer
+STAG2	BLCA	Highly significantly mutated	Bladder cancer
+TBC1D12	BLCA	Highly significantly mutated	Bladder cancer
+RXRA	BLCA	Highly significantly mutated	Bladder cancer
+NFE2L2	BLCA	Highly significantly mutated	Bladder cancer
+C3orf70	BLCA	Highly significantly mutated	Bladder cancer
+CREBBP	BLCA	Significantly mutated	Bladder cancer
+ERBB3	BLCA	Significantly mutated	Bladder cancer
+FBXW7	BLCA	Significantly mutated	Bladder cancer
+ELF3	BLCA	Significantly mutated	Bladder cancer
+FGFR3	BLCA	Significantly mutated	Bladder cancer
+TSC1	BLCA	Significantly mutated	Bladder cancer
+MGA	BLCA	Significantly mutated	Bladder cancer
+EZR	BLCA	Significantly mutated	Bladder cancer
+FOXQ1	BLCA	Significantly mutated	Bladder cancer
+HRAS	BLCA	Significantly mutated	Bladder cancer
+SNX25	BLCA	Significantly mutated	Bladder cancer
+MLL3	BLCA	Near significance	Bladder cancer
+MLL	BLCA	Near significance	Bladder cancer
+RBM26	BLCA	Near significance	Bladder cancer
+ASXL2	BLCA	Near significance	Bladder cancer
+TRERF1	BLCA	Near significance	Bladder cancer
+BCLAF1	BLCA	Near significance	Bladder cancer
+EPHA2	BLCA	Near significance	Bladder cancer
+SETD2	BLCA	Near significance	Bladder cancer
+AKAP11	BLCA	Near significance	Bladder cancer
+DDX5	BLCA	Near significance	Bladder cancer
+RHOA	BLCA	Near significance	Bladder cancer
+BPI	BLCA	Near significance	Bladder cancer
+PHF6	BLCA	Near significance	Bladder cancer
+TGFBR2	BLCA	Near significance	Bladder cancer
+CDKN2A	BLCA	Near significance	Bladder cancer
+PIK3CA	BRCA	Highly significantly mutated	Breast cancer
+TP53	BRCA	Highly significantly mutated	Breast cancer
+GATA3	BRCA	Highly significantly mutated	Breast cancer
+MAP3K1	BRCA	Highly significantly mutated	Breast cancer
+MLL3	BRCA	Highly significantly mutated	Breast cancer
+CDH1	BRCA	Highly significantly mutated	Breast cancer
+NCOR1	BRCA	Highly significantly mutated	Breast cancer
+MAP2K4	BRCA	Highly significantly mutated	Breast cancer
+PTEN	BRCA	Highly significantly mutated	Breast cancer
+RUNX1	BRCA	Highly significantly mutated	Breast cancer
+PIK3R1	BRCA	Highly significantly mutated	Breast cancer
+CTCF	BRCA	Highly significantly mutated	Breast cancer
+AKT1	BRCA	Highly significantly mutated	Breast cancer
+CBFB	BRCA	Highly significantly mutated	Breast cancer
+SPEN	BRCA	Highly significantly mutated	Breast cancer
+SF3B1	BRCA	Highly significantly mutated	Breast cancer
+ARID1A	BRCA	Highly significantly mutated	Breast cancer
+RB1	BRCA	Highly significantly mutated	Breast cancer
+MLL	BRCA	Highly significantly mutated	Breast cancer
+KRAS	BRCA	Highly significantly mutated	Breast cancer
+TBX3	BRCA	Significantly mutated	Breast cancer
+ERBB2	BRCA	Significantly mutated	Breast cancer
+FOXA1	BRCA	Significantly mutated	Breast cancer
+MED23	BRCA	Significantly mutated	Breast cancer
+STAG2	BRCA	Significantly mutated	Breast cancer
+MYB	BRCA	Significantly mutated	Breast cancer
+TBL1XR1	BRCA	Significantly mutated	Breast cancer
+HIST1H3B	BRCA	Significantly mutated	Breast cancer
+CASP8	BRCA	Significantly mutated	Breast cancer
+CDKN1B	BRCA	Significantly mutated	Breast cancer
+CUL4B	BRCA	Significantly mutated	Breast cancer
+RAB40A	BRCA	Significantly mutated	Breast cancer
+ERBB3	BRCA	Near significance	Breast cancer
+CDC42BPA	BRCA	Near significance	Breast cancer
+SETDB1	BRCA	Near significance	Breast cancer
+FGFR2	BRCA	Near significance	Breast cancer
+GNPTAB	BRCA	Near significance	Breast cancer
+EP300	BRCA	Near significance	Breast cancer
+ACVR1B	BRCA	Near significance	Breast cancer
+CDKN1B	CARC	Significantly mutated	Carcinoid
+TP53BP1	CARC	Near significance	Carcinoid
+TP53	CARC	Near significance	Carcinoid
+TGFBR2	CARC	Near significance	Carcinoid
+RB1	CARC	Near significance	Carcinoid
+SF3B1	CLL	Highly significantly mutated	Chronic lymphocytic leukemia
+TP53	CLL	Highly significantly mutated	Chronic lymphocytic leukemia
+MYD88	CLL	Highly significantly mutated	Chronic lymphocytic leukemia
+XPO1	CLL	Highly significantly mutated	Chronic lymphocytic leukemia
+HIST1H1E	CLL	Significantly mutated	Chronic lymphocytic leukemia
+RPS15	CLL	Significantly mutated	Chronic lymphocytic leukemia
+RPS2	CLL	Significantly mutated	Chronic lymphocytic leukemia
+ATM	CLL	Near significance	Chronic lymphocytic leukemia
+CHD2	CLL	Near significance	Chronic lymphocytic leukemia
+SPEN	CLL	Near significance	Chronic lymphocytic leukemia
+MED12	CLL	Near significance	Chronic lymphocytic leukemia
+POT1	CLL	Near significance	Chronic lymphocytic leukemia
+GNB1	CLL	Near significance	Chronic lymphocytic leukemia
+NRAS	CLL	Near significance	Chronic lymphocytic leukemia
+DDX3X	CLL	Near significance	Chronic lymphocytic leukemia
+IDH1	CLL	Near significance	Chronic lymphocytic leukemia
+SETDB1	CLL	Near significance	Chronic lymphocytic leukemia
+JAK1	CLL	Near significance	Chronic lymphocytic leukemia
+APC	CRC	Highly significantly mutated	Colorectal cancer
+TP53	CRC	Highly significantly mutated	Colorectal cancer
+KRAS	CRC	Highly significantly mutated	Colorectal cancer
+PIK3CA	CRC	Highly significantly mutated	Colorectal cancer
+FBXW7	CRC	Highly significantly mutated	Colorectal cancer
+SMAD4	CRC	Highly significantly mutated	Colorectal cancer
+TCF7L2	CRC	Highly significantly mutated	Colorectal cancer
+NRAS	CRC	Highly significantly mutated	Colorectal cancer
+BRAF	CRC	Highly significantly mutated	Colorectal cancer
+SMAD2	CRC	Highly significantly mutated	Colorectal cancer
+PCBP1	CRC	Highly significantly mutated	Colorectal cancer
+ARID1A	CRC	Significantly mutated	Colorectal cancer
+ACVR1B	CRC	Significantly mutated	Colorectal cancer
+ERBB3	CRC	Significantly mutated	Colorectal cancer
+AXIN2	CRC	Significantly mutated	Colorectal cancer
+CDC27	CRC	Significantly mutated	Colorectal cancer
+CASP8	CRC	Significantly mutated	Colorectal cancer
+ELF3	CRC	Significantly mutated	Colorectal cancer
+NTN4	CRC	Significantly mutated	Colorectal cancer
+B2M	CRC	Significantly mutated	Colorectal cancer
+GOT1	CRC	Significantly mutated	Colorectal cancer
+TRIM23	CRC	Significantly mutated	Colorectal cancer
+SIRT4	CRC	Significantly mutated	Colorectal cancer
+FAM123B	CRC	Near significance	Colorectal cancer
+KIAA1804	CRC	Near significance	Colorectal cancer
+ARID2	CRC	Near significance	Colorectal cancer
+MSH6	CRC	Near significance	Colorectal cancer
+MIER3	CRC	Near significance	Colorectal cancer
+MAP2K4	CRC	Near significance	Colorectal cancer
+CTNNB1	CRC	Near significance	Colorectal cancer
+ERBB2	CRC	Near significance	Colorectal cancer
+BCLAF1	CRC	Near significance	Colorectal cancer
+BCOR	CRC	Near significance	Colorectal cancer
+NR4A2	CRC	Near significance	Colorectal cancer
+RBM10	CRC	Near significance	Colorectal cancer
+IDH2	CRC	Near significance	Colorectal cancer
+PTEN	CRC	Near significance	Colorectal cancer
+CNBD1	CRC	Near significance	Colorectal cancer
+TRAF3	CRC	Near significance	Colorectal cancer
+CD70	CRC	Near significance	Colorectal cancer
+CREBBP	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+TP53	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+MLL2	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+CARD11	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+TNFRSF14	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+MYD88	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+CD79B	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+EZH2	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+TNF	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+CD70	DLBCL	Highly significantly mutated	Diffuse large B-cell lymphoma
+GNA13	DLBCL	Significantly mutated	Diffuse large B-cell lymphoma
+ITPKB	DLBCL	Significantly mutated	Diffuse large B-cell lymphoma
+POU2F2	DLBCL	Significantly mutated	Diffuse large B-cell lymphoma
+HLA-A	DLBCL	Significantly mutated	Diffuse large B-cell lymphoma
+BRAF	DLBCL	Significantly mutated	Diffuse large B-cell lymphoma
+POU2AF1	DLBCL	Significantly mutated	Diffuse large B-cell lymphoma
+B2M	DLBCL	Near significance	Diffuse large B-cell lymphoma
+BCL6	DLBCL	Near significance	Diffuse large B-cell lymphoma
+HIST1H3B	DLBCL	Near significance	Diffuse large B-cell lymphoma
+MAP2K1	DLBCL	Near significance	Diffuse large B-cell lymphoma
+KRAS	DLBCL	Near significance	Diffuse large B-cell lymphoma
+LTB	DLBCL	Near significance	Diffuse large B-cell lymphoma
+STAT6	DLBCL	Near significance	Diffuse large B-cell lymphoma
+NOTCH1	DLBCL	Near significance	Diffuse large B-cell lymphoma
+PTEN	DLBCL	Near significance	Diffuse large B-cell lymphoma
+ZNF471	DLBCL	Near significance	Diffuse large B-cell lymphoma
+PTEN	UCEC	Highly significantly mutated	Endometrial cancer
+PIK3CA	UCEC	Highly significantly mutated	Endometrial cancer
+PIK3R1	UCEC	Highly significantly mutated	Endometrial cancer
+ARID1A	UCEC	Highly significantly mutated	Endometrial cancer
+TP53	UCEC	Highly significantly mutated	Endometrial cancer
+KRAS	UCEC	Highly significantly mutated	Endometrial cancer
+CTCF	UCEC	Highly significantly mutated	Endometrial cancer
+ZFHX3	UCEC	Highly significantly mutated	Endometrial cancer
+FBXW7	UCEC	Highly significantly mutated	Endometrial cancer
+FGFR2	UCEC	Highly significantly mutated	Endometrial cancer
+ARHGAP35	UCEC	Highly significantly mutated	Endometrial cancer
+PPP2R1A	UCEC	Highly significantly mutated	Endometrial cancer
+CCND1	UCEC	Highly significantly mutated	Endometrial cancer
+ERBB3	UCEC	Highly significantly mutated	Endometrial cancer
+ZNF471	UCEC	Highly significantly mutated	Endometrial cancer
+ING1	UCEC	Highly significantly mutated	Endometrial cancer
+CTNNB1	UCEC	Significantly mutated	Endometrial cancer
+FAT1	UCEC	Significantly mutated	Endometrial cancer
+BCOR	UCEC	Significantly mutated	Endometrial cancer
+CHD4	UCEC	Significantly mutated	Endometrial cancer
+ANK3	UCEC	Significantly mutated	Endometrial cancer
+ARID5B	UCEC	Significantly mutated	Endometrial cancer
+POLE	UCEC	Significantly mutated	Endometrial cancer
+SACS	UCEC	Significantly mutated	Endometrial cancer
+CUX1	UCEC	Significantly mutated	Endometrial cancer
+EP300	UCEC	Significantly mutated	Endometrial cancer
+SPOP	UCEC	Significantly mutated	Endometrial cancer
+GNPTAB	UCEC	Significantly mutated	Endometrial cancer
+MORC4	UCEC	Significantly mutated	Endometrial cancer
+DNER	UCEC	Significantly mutated	Endometrial cancer
+INPPL1	UCEC	Significantly mutated	Endometrial cancer
+SGK1	UCEC	Significantly mutated	Endometrial cancer
+ADNP	UCEC	Significantly mutated	Endometrial cancer
+SOS1	UCEC	Significantly mutated	Endometrial cancer
+SLC1A3	UCEC	Significantly mutated	Endometrial cancer
+TCP11L2	UCEC	Significantly mutated	Endometrial cancer
+RSBN1L	UCEC	Significantly mutated	Endometrial cancer
+TBL1XR1	UCEC	Significantly mutated	Endometrial cancer
+CAP2	UCEC	Significantly mutated	Endometrial cancer
+KLHL8	UCEC	Significantly mutated	Endometrial cancer
+PPM1D	UCEC	Significantly mutated	Endometrial cancer
+ZNF620	UCEC	Significantly mutated	Endometrial cancer
+SOX17	UCEC	Significantly mutated	Endometrial cancer
+SELP	UCEC	Significantly mutated	Endometrial cancer
+DIAPH1	UCEC	Significantly mutated	Endometrial cancer
+TTLL9	UCEC	Significantly mutated	Endometrial cancer
+MICALCL	UCEC	Significantly mutated	Endometrial cancer
+NRAS	UCEC	Significantly mutated	Endometrial cancer
+EIF2S2	UCEC	Significantly mutated	Endometrial cancer
+AKT1	UCEC	Significantly mutated	Endometrial cancer
+ZRANB3	UCEC	Significantly mutated	Endometrial cancer
+TAP1	UCEC	Significantly mutated	Endometrial cancer
+SLC44A3	UCEC	Significantly mutated	Endometrial cancer
+MYCN	UCEC	Significantly mutated	Endometrial cancer
+TXNDC8	UCEC	Significantly mutated	Endometrial cancer
+ALKBH6	UCEC	Significantly mutated	Endometrial cancer
+CCDC6	UCEC	Significantly mutated	Endometrial cancer
+TPX2	UCEC	Significantly mutated	Endometrial cancer
+MLL4	UCEC	Near significance	Endometrial cancer
+ATM	UCEC	Near significance	Endometrial cancer
+MTOR	UCEC	Near significance	Endometrial cancer
+MGA	UCEC	Near significance	Endometrial cancer
+COL5A1	UCEC	Near significance	Endometrial cancer
+RASA1	UCEC	Near significance	Endometrial cancer
+RB1	UCEC	Near significance	Endometrial cancer
+ZNF334	UCEC	Near significance	Endometrial cancer
+CCDC144A	UCEC	Near significance	Endometrial cancer
+CASP8	UCEC	Near significance	Endometrial cancer
+RAB3GAP1	UCEC	Near significance	Endometrial cancer
+ZNF606	UCEC	Near significance	Endometrial cancer
+NFE2L2	UCEC	Near significance	Endometrial cancer
+TP53BP1	UCEC	Near significance	Endometrial cancer
+APAF1	UCEC	Near significance	Endometrial cancer
+EDC4	UCEC	Near significance	Endometrial cancer
+JAKMIP2	UCEC	Near significance	Endometrial cancer
+MECOM	UCEC	Near significance	Endometrial cancer
+PBRM1	UCEC	Near significance	Endometrial cancer
+TBRG4	UCEC	Near significance	Endometrial cancer
+ZNF485	UCEC	Near significance	Endometrial cancer
+METTL14	UCEC	Near significance	Endometrial cancer
+KRT35	UCEC	Near significance	Endometrial cancer
+FLT3	UCEC	Near significance	Endometrial cancer
+GFAP	UCEC	Near significance	Endometrial cancer
+ZNF263	UCEC	Near significance	Endometrial cancer
+CAB39L	UCEC	Near significance	Endometrial cancer
+ERBB2	UCEC	Near significance	Endometrial cancer
+TDRD10	UCEC	Near significance	Endometrial cancer
+AHCYL1	UCEC	Near significance	Endometrial cancer
+LGMN	UCEC	Near significance	Endometrial cancer
+OR8D8	UCEC	Near significance	Endometrial cancer
+CDKN1B	UCEC	Near significance	Endometrial cancer
+RRAS2	UCEC	Near significance	Endometrial cancer
+NAA38	UCEC	Near significance	Endometrial cancer
+TMEM55A	UCEC	Near significance	Endometrial cancer
+TP53	ESO	Highly significantly mutated	Esophageal adenocarcinoma
+FLG	ESO	Highly significantly mutated	Esophageal adenocarcinoma
+CDKN2A	ESO	Highly significantly mutated	Esophageal adenocarcinoma
+COL5A1	ESO	Significantly mutated	Esophageal adenocarcinoma
+SMARCA4	ESO	Significantly mutated	Esophageal adenocarcinoma
+PIK3CA	ESO	Significantly mutated	Esophageal adenocarcinoma
+IL7R	ESO	Significantly mutated	Esophageal adenocarcinoma
+SMARCB1	ESO	Significantly mutated	Esophageal adenocarcinoma
+SACS	ESO	Near significance	Esophageal adenocarcinoma
+ERBB4	ESO	Near significance	Esophageal adenocarcinoma
+SMAD4	ESO	Near significance	Esophageal adenocarcinoma
+ARID1A	ESO	Near significance	Esophageal adenocarcinoma
+PIK3R1	ESO	Near significance	Esophageal adenocarcinoma
+CNBD1	ESO	Near significance	Esophageal adenocarcinoma
+KRAS	ESO	Near significance	Esophageal adenocarcinoma
+SETDB1	ESO	Near significance	Esophageal adenocarcinoma
+ERBB2	ESO	Near significance	Esophageal adenocarcinoma
+FAM123B	ESO	Near significance	Esophageal adenocarcinoma
+PTEN	GBM	Highly significantly mutated	Glioblastoma multiforme
+TP53	GBM	Highly significantly mutated	Glioblastoma multiforme
+EGFR	GBM	Highly significantly mutated	Glioblastoma multiforme
+PIK3R1	GBM	Highly significantly mutated	Glioblastoma multiforme
+PIK3CA	GBM	Highly significantly mutated	Glioblastoma multiforme
+NF1	GBM	Highly significantly mutated	Glioblastoma multiforme
+RB1	GBM	Highly significantly mutated	Glioblastoma multiforme
+IDH1	GBM	Highly significantly mutated	Glioblastoma multiforme
+STAG2	GBM	Highly significantly mutated	Glioblastoma multiforme
+RPL5	GBM	Highly significantly mutated	Glioblastoma multiforme
+SLC26A3	GBM	Highly significantly mutated	Glioblastoma multiforme
+MUC17	GBM	Significantly mutated	Glioblastoma multiforme
+KEL	GBM	Significantly mutated	Glioblastoma multiforme
+CHD8	GBM	Significantly mutated	Glioblastoma multiforme
+NUP210L	GBM	Significantly mutated	Glioblastoma multiforme
+BRAF	GBM	Significantly mutated	Glioblastoma multiforme
+MAP3K1	GBM	Significantly mutated	Glioblastoma multiforme
+QK1	GBM	Significantly mutated	Glioblastoma multiforme
+AZGP1	GBM	Significantly mutated	Glioblastoma multiforme
+SETD2	GBM	Significantly mutated	Glioblastoma multiforme
+CD1D	GBM	Significantly mutated	Glioblastoma multiforme
+DDX5	GBM	Significantly mutated	Glioblastoma multiforme
+IL4R	GBM	Near significance	Glioblastoma multiforme
+BCOR	GBM	Near significance	Glioblastoma multiforme
+PAN3	GBM	Near significance	Glioblastoma multiforme
+AFM	GBM	Near significance	Glioblastoma multiforme
+CD209	GBM	Near significance	Glioblastoma multiforme
+SMC1A	GBM	Near significance	Glioblastoma multiforme
+PTPN11	GBM	Near significance	Glioblastoma multiforme
+GLT8D2	GBM	Near significance	Glioblastoma multiforme
+EZR	GBM	Near significance	Glioblastoma multiforme
+ODF4	GBM	Near significance	Glioblastoma multiforme
+ZDHHC4	GBM	Near significance	Glioblastoma multiforme
+PRKCD	GBM	Near significance	Glioblastoma multiforme
+TP53	HNSC	Highly significantly mutated	Head and neck cancer
+CDKN2A	HNSC	Highly significantly mutated	Head and neck cancer
+FAT1	HNSC	Highly significantly mutated	Head and neck cancer
+PIK3CA	HNSC	Highly significantly mutated	Head and neck cancer
+NOTCH1	HNSC	Highly significantly mutated	Head and neck cancer
+MLL2	HNSC	Highly significantly mutated	Head and neck cancer
+NSD1	HNSC	Highly significantly mutated	Head and neck cancer
+CASP8	HNSC	Highly significantly mutated	Head and neck cancer
+NFE2L2	HNSC	Highly significantly mutated	Head and neck cancer
+AJUBA	HNSC	Highly significantly mutated	Head and neck cancer
+EPHA2	HNSC	Highly significantly mutated	Head and neck cancer
+HRAS	HNSC	Highly significantly mutated	Head and neck cancer
+ZNF750	HNSC	Highly significantly mutated	Head and neck cancer
+TGFBR2	HNSC	Highly significantly mutated	Head and neck cancer
+HLA-A	HNSC	Highly significantly mutated	Head and neck cancer
+PTEN	HNSC	Highly significantly mutated	Head and neck cancer
+RAC1	HNSC	Highly significantly mutated	Head and neck cancer
+RHOA	HNSC	Highly significantly mutated	Head and neck cancer
+EP300	HNSC	Significantly mutated	Head and neck cancer
+RASA1	HNSC	Significantly mutated	Head and neck cancer
+CTCF	HNSC	Significantly mutated	Head and neck cancer
+HLA-B	HNSC	Significantly mutated	Head and neck cancer
+B2M	HNSC	Significantly mutated	Head and neck cancer
+MAP4K3	HNSC	Significantly mutated	Head and neck cancer
+IPO7	HNSC	Significantly mutated	Head and neck cancer
+OTUD7A	HNSC	Significantly mutated	Head and neck cancer
+MLL3	HNSC	Near significance	Head and neck cancer
+NCOR1	HNSC	Near significance	Head and neck cancer
+ARHGAP35	HNSC	Near significance	Head and neck cancer
+LCP1	HNSC	Near significance	Head and neck cancer
+RB1	HNSC	Near significance	Head and neck cancer
+ARID2	HNSC	Near significance	Head and neck cancer
+ASXL1	HNSC	Near significance	Head and neck cancer
+PBRM1	HNSC	Near significance	Head and neck cancer
+KDM6A	HNSC	Near significance	Head and neck cancer
+IRF6	HNSC	Near significance	Head and neck cancer
+SMAD4	HNSC	Near significance	Head and neck cancer
+RBM5	HNSC	Near significance	Head and neck cancer
+ELF4	HNSC	Near significance	Head and neck cancer
+MAPK1	HNSC	Near significance	Head and neck cancer
+VHL	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+PBRM1	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+SETD2	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+BAP1	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+KDM5C	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+MTOR	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+PTEN	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+TP53	KIRC	Highly significantly mutated	Kidney clear cell carcinoma
+ARID1A	KIRC	Significantly mutated	Kidney clear cell carcinoma
+ATM	KIRC	Significantly mutated	Kidney clear cell carcinoma
+GUSB	KIRC	Significantly mutated	Kidney clear cell carcinoma
+RHEB	KIRC	Significantly mutated	Kidney clear cell carcinoma
+TCEB1	KIRC	Significantly mutated	Kidney clear cell carcinoma
+MPO	KIRC	Significantly mutated	Kidney clear cell carcinoma
+CCDC120	KIRC	Significantly mutated	Kidney clear cell carcinoma
+PIK3CA	KIRC	Near significance	Kidney clear cell carcinoma
+RALGAPA1	KIRC	Near significance	Kidney clear cell carcinoma
+COL5A3	KIRC	Near significance	Kidney clear cell carcinoma
+PTCH1	KIRC	Near significance	Kidney clear cell carcinoma
+EGFR	KIRC	Near significance	Kidney clear cell carcinoma
+ARHGAP35	KIRC	Near significance	Kidney clear cell carcinoma
+PCK1	KIRC	Near significance	Kidney clear cell carcinoma
+BRCA1	KIRC	Near significance	Kidney clear cell carcinoma
+FGFR3	KIRC	Near significance	Kidney clear cell carcinoma
+TDRD10	KIRC	Near significance	Kidney clear cell carcinoma
+TP53	LUAD	Highly significantly mutated	Lung adenocarcinoma
+KRAS	LUAD	Highly significantly mutated	Lung adenocarcinoma
+KEAP1	LUAD	Highly significantly mutated	Lung adenocarcinoma
+EGFR	LUAD	Highly significantly mutated	Lung adenocarcinoma
+STK11	LUAD	Highly significantly mutated	Lung adenocarcinoma
+NF1	LUAD	Highly significantly mutated	Lung adenocarcinoma
+SMARCA4	LUAD	Highly significantly mutated	Lung adenocarcinoma
+BRAF	LUAD	Highly significantly mutated	Lung adenocarcinoma
+CDKN2A	LUAD	Highly significantly mutated	Lung adenocarcinoma
+MET	LUAD	Highly significantly mutated	Lung adenocarcinoma
+RBM10	LUAD	Highly significantly mutated	Lung adenocarcinoma
+PIK3CA	LUAD	Highly significantly mutated	Lung adenocarcinoma
+RIT1	LUAD	Highly significantly mutated	Lung adenocarcinoma
+UDAF1	LUAD	Highly significantly mutated	Lung adenocarcinoma
+ATM	LUAD	Significantly mutated	Lung adenocarcinoma
+ARID1A	LUAD	Significantly mutated	Lung adenocarcinoma
+SLC4A5	LUAD	Significantly mutated	Lung adenocarcinoma
+RB1	LUAD	Significantly mutated	Lung adenocarcinoma
+ERBB2	LUAD	Significantly mutated	Lung adenocarcinoma
+MAP2K1	LUAD	Significantly mutated	Lung adenocarcinoma
+STX2	LUAD	Significantly mutated	Lung adenocarcinoma
+NBPF1	LUAD	Significantly mutated	Lung adenocarcinoma
+MLL3	LUAD	Near significance	Lung adenocarcinoma
+FAT1	LUAD	Near significance	Lung adenocarcinoma
+APC	LUAD	Near significance	Lung adenocarcinoma
+ARID2	LUAD	Near significance	Lung adenocarcinoma
+SLC39A6	LUAD	Near significance	Lung adenocarcinoma
+ARHGAP35	LUAD	Near significance	Lung adenocarcinoma
+SMAD4	LUAD	Near significance	Lung adenocarcinoma
+CTNNB1	LUAD	Near significance	Lung adenocarcinoma
+CDK12	LUAD	Near significance	Lung adenocarcinoma
+MBD1	LUAD	Near significance	Lung adenocarcinoma
+FBXO16	LUAD	Near significance	Lung adenocarcinoma
+PBLD	LUAD	Near significance	Lung adenocarcinoma
+ZNF774	LUAD	Near significance	Lung adenocarcinoma
+NRAS	LUAD	Near significance	Lung adenocarcinoma
+CDKN1B	LUAD	Near significance	Lung adenocarcinoma
+TP53	LUSC	Highly significantly mutated	Lung squamous cell carcinoma
+MLL2	LUSC	Highly significantly mutated	Lung squamous cell carcinoma
+CDKN2A	LUSC	Highly significantly mutated	Lung squamous cell carcinoma
+PIK3CA	LUSC	Highly significantly mutated	Lung squamous cell carcinoma
+NFE2L2	LUSC	Highly significantly mutated	Lung squamous cell carcinoma
+KEAP1	LUSC	Highly significantly mutated	Lung squamous cell carcinoma
+ARID1A	LUSC	Significantly mutated	Lung squamous cell carcinoma
+RB1	LUSC	Significantly mutated	Lung squamous cell carcinoma
+FBXW7	LUSC	Significantly mutated	Lung squamous cell carcinoma
+HLA-A	LUSC	Significantly mutated	Lung squamous cell carcinoma
+HRAS	LUSC	Significantly mutated	Lung squamous cell carcinoma
+FAT1	LUSC	Near significance	Lung squamous cell carcinoma
+NF1	LUSC	Near significance	Lung squamous cell carcinoma
+PTEN	LUSC	Near significance	Lung squamous cell carcinoma
+NOTCH1	LUSC	Near significance	Lung squamous cell carcinoma
+ARHGAP35	LUSC	Near significance	Lung squamous cell carcinoma
+NSD1	LUSC	Near significance	Lung squamous cell carcinoma
+ASXL1	LUSC	Near significance	Lung squamous cell carcinoma
+EP300	LUSC	Near significance	Lung squamous cell carcinoma
+RASA1	LUSC	Near significance	Lung squamous cell carcinoma
+EGFR	LUSC	Near significance	Lung squamous cell carcinoma
+FUBP1	LUSC	Near significance	Lung squamous cell carcinoma
+FGFR3	LUSC	Near significance	Lung squamous cell carcinoma
+STK11	LUSC	Near significance	Lung squamous cell carcinoma
+SERPINB13	LUSC	Near significance	Lung squamous cell carcinoma
+DDX3X	MED	Highly significantly mutated	Medulloblastoma
+CTNNB1	MED	Significantly mutated	Medulloblastoma
+MLL2	MED	Near significance	Medulloblastoma
+TP53	MED	Near significance	Medulloblastoma
+WAS	MED	Near significance	Medulloblastoma
+QK1	MED	Near significance	Medulloblastoma
+SUFU	MED	Near significance	Medulloblastoma
+BRAF	MEL	Highly significantly mutated	Melanoma
+NRAS	MEL	Highly significantly mutated	Melanoma
+BCLAF1	MEL	Highly significantly mutated	Melanoma
+TP53	MEL	Highly significantly mutated	Melanoma
+CDKN2A	MEL	Highly significantly mutated	Melanoma
+RAC1	MEL	Highly significantly mutated	Melanoma
+XIRP2	MEL	Significantly mutated	Melanoma
+MYOCD	MEL	Significantly mutated	Melanoma
+ALPK2	MEL	Significantly mutated	Melanoma
+PTEN	MEL	Significantly mutated	Melanoma
+PPP6C	MEL	Significantly mutated	Melanoma
+FRMD7	MEL	Significantly mutated	Melanoma
+OR4A16	MEL	Significantly mutated	Melanoma
+OR52N1	MEL	Significantly mutated	Melanoma
+WASF3	MEL	Significantly mutated	Melanoma
+CDK4	MEL	Significantly mutated	Melanoma
+LCTL	MEL	Significantly mutated	Melanoma
+STK19	MEL	Significantly mutated	Melanoma
+ACO1	MEL	Significantly mutated	Melanoma
+ANK3	MEL	Near significance	Melanoma
+MXRA5	MEL	Near significance	Melanoma
+GPR116	MEL	Near significance	Melanoma
+SLC12A8	MEL	Near significance	Melanoma
+EGFL6	MEL	Near significance	Melanoma
+PCDP1	MEL	Near significance	Melanoma
+ARID2	MEL	Near significance	Melanoma
+CCDC148	MEL	Near significance	Melanoma
+SNX31	MEL	Near significance	Melanoma
+SLC44A4	MEL	Near significance	Melanoma
+CTNNB1	MEL	Near significance	Melanoma
+MGC42105	MEL	Near significance	Melanoma
+ZNF217	MEL	Near significance	Melanoma
+RXRA	MEL	Near significance	Melanoma
+NCOR1	MEL	Near significance	Melanoma
+ALDH1B1	MEL	Near significance	Melanoma
+ZNF750	MEL	Near significance	Melanoma
+PIK3CA	MEL	Near significance	Melanoma
+FDXACB1	MEL	Near significance	Melanoma
+KIT	MEL	Near significance	Melanoma
+KRAS	MM	Highly significantly mutated	Multiple myeloma
+NRAS	MM	Highly significantly mutated	Multiple myeloma
+DIS3	MM	Highly significantly mutated	Multiple myeloma
+TP53	MM	Highly significantly mutated	Multiple myeloma
+FAM46C	MM	Highly significantly mutated	Multiple myeloma
+BRAF	MM	Highly significantly mutated	Multiple myeloma
+TRAF3	MM	Significantly mutated	Multiple myeloma
+PRDM1	MM	Significantly mutated	Multiple myeloma
+IRF4	MM	Significantly mutated	Multiple myeloma
+INTS12	MM	Significantly mutated	Multiple myeloma
+IDH1	MM	Significantly mutated	Multiple myeloma
+FGFR3	MM	Near significance	Multiple myeloma
+PTPN11	MM	Near significance	Multiple myeloma
+EZR	MM	Near significance	Multiple myeloma
+ALK	NB	Highly significantly mutated	Neuroblastoma
+PTPN11	NB	Near significance	Neuroblastoma
+FGFR3	NB	Near significance	Neuroblastoma
+TP53	OV	Highly significantly mutated	Ovarian cancer
+BRCA1	OV	Highly significantly mutated	Ovarian cancer
+RB1	OV	Highly significantly mutated	Ovarian cancer
+CDK12	OV	Highly significantly mutated	Ovarian cancer
+NF1	OV	Significantly mutated	Ovarian cancer
+BRCA2	OV	Near significance	Ovarian cancer
+COL5A3	OV	Near significance	Ovarian cancer
+CREBBP	OV	Near significance	Ovarian cancer
+SMARCB1	OV	Near significance	Ovarian cancer
+ITGB7	OV	Near significance	Ovarian cancer
+ERBB2	OV	Near significance	Ovarian cancer
+ACVR2B	OV	Near significance	Ovarian cancer
+PDAP1	OV	Near significance	Ovarian cancer
+KRAS	OV	Near significance	Ovarian cancer
+NRAS	OV	Near significance	Ovarian cancer
+SPOP	PRAD	Highly significantly mutated	Prostate cancer
+TP53	PRAD	Significantly mutated	Prostate cancer
+MED12	PRAD	Significantly mutated	Prostate cancer
+ATM	PRAD	Significantly mutated	Prostate cancer
+FOXA1	PRAD	Near significance	Prostate cancer
+COL5A1	PRAD	Near significance	Prostate cancer
+PIK3CA	PRAD	Near significance	Prostate cancer
+SMARCB1	RHAB	Highly significantly mutated	Rhabdoid tumor
