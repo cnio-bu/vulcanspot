@@ -16,7 +16,9 @@ Genetic alterations lead to tumour progression and survival in cancer, but also 
 - - - 
 Most of the pipeline is based on R (recommended version 3.4.4).
 R packages:
+
 | package name | source | Recommended version |
+| ---------- | ------- | --------- |
 | `biomaRt` | Bioconductor | 2.34.2 |
 | `GenomicFeatures` | Bioconductor | 1.30.3 |
 | `SCAN.UPC` | Bioconductor | 2.20.0 |
