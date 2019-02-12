@@ -1,7 +1,6 @@
-<img src="./figures/vulcanspot.png" height="100">
-# vulcanspot
-_a tool to prioritize therapeutic vulnerabilities in cancer_
-The tool could be access at http://www.vulcanspot.org/
+<img src="./figures/vulcanspot.png" height="70">
+A tool to prioritize therapeutic vulnerabilities in cancer.
+> The tool could be accessed at http://www.vulcanspot.org/
 
 ## Graphical abstract
 ![Alt text](./figures/vulcanspot_workflow.png)
