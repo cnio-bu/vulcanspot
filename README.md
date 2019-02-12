@@ -1,5 +1,7 @@
+<img src="./figures/vulcanspot.png" height="100">
 # vulcanspot
-a tool to prioritize therapeutic vulnerabilities in cancer
+_a tool to prioritize therapeutic vulnerabilities in cancer_
+The tool could be access at http://www.vulcanspot.org/
 
 ## Graphical abstract
 ![Alt text](./figures/vulcanspot_workflow.png)
@@ -14,8 +16,7 @@ Genetic alterations lead to tumour progression and survival in cancer, but also 
 * python2.7 (UNIX)
 * R (UNIX)
 - - - 
-Most of the pipeline is based on R (recommended version 3.4.4).
-R packages:
+Vulcanspot's pipeline is based on R scripts that process, transform and compare data from different biological sources. The following R packages are required (R version 3.4.4):
 
 | package name | source | Recommended version |
 | ---------- | ------- | --------- |
