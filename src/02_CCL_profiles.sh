@@ -38,8 +38,22 @@ Rscript ./src/__ALT_genetic_alteration_built.R
 #####################################################################
 declare -A DS;
 
-DS=( ["CRISPR"]="https://depmap.org/portal/dataset/download/Avana/portal-Avana-2018-05-10.csv"
-	["RNAi"]="https://depmap.org/portal/dataset/download/RNAi_merged/portal-RNAi_merged-2018-05-10.csv")
+## Original version, the URLs are deprecated now
+## It seems the DepMap data portal have changed the service they
+## bring the data, so when I get the files these were matrices
+## for the live version of the data portal. Then they created
+## a 'download page' instead of direct URLs. In this page the files
+## are in a different format. In the meantime I adapt the pipeline,
+## a mirror of the files are the source for the data.
+#DS=( ["CRISPR"]="https://depmap.org/portal/dataset/download/Avana/portal-Avana-2018-05-10.csv"
+#	["RNAi"]="https://depmap.org/portal/dataset/download/RNAi_merged/portal-RNAi_merged-2018-05-10.csv")
+
+## Mirror of the files in figshare
+DS=( ["CRISPR"]="https://ndownloader.figshare.com/files/14342636?private_link=1c2f1319b7c95067fad6"
+	["RNAi"]="https://ndownloader.figshare.com/files/14342639?private_link=1c2f1319b7c95067fad6")
+
+DS_fname=( ["CRISPR"="portal-Avana-2018-05-10.csv"]
+["RNAi"]="portal-RNAi_merged-2018-05-10.csv")
 
 DS_REF=( ["CRISPR"]="AVANA_18Q2"
 	["RNAi"]="Combined_RNAi")
@@ -75,7 +89,7 @@ echo -e "id\tname\treference" > ./data/CCL/datasets.tsv;
 
 for dataset in "${!DS[@]}";do 
 	ds_url=${DS[$dataset]};
-	ds_file="./data/CCL/$(basename $ds_url)";
+	ds_file="./data/CCL/${DS_fname[$dataset]}";
 	echo -e "[INFO] Starting processing '$dataset' at $(date)";
 	
 	echo -e "[INFO] Checking if it is neccesary to download the dataset...";
