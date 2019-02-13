@@ -83,7 +83,7 @@ Rscript ./src/__CGD_gene_essentiality_analysis.R --DSNAMES CRISPR:RNAi --DEPMATR
 
 
 #####################################################################
-### DOWNLOAD DATASETS OF GEBE DEPENDENCIES ##########################
+### DOWNLOAD DATASETS OF GENE DEPENDENCIES ##########################
 #####################################################################
 echo -e "id\tname\treference" > ./data/CCL/datasets.tsv;
 
@@ -96,7 +96,7 @@ for dataset in "${!DS[@]}";do
 	download_DS $dataset $ds_url $ds_file;
 
 	echo -e "[INFO] ";
-	echo -e "1\t$dataset\t${DS_REF[$dataset]}" >> ./data/Datasets/datasets.tsv;
+	echo -e "1\t$dataset\t${DS_REF[$dataset]}" >> ./data/CCL/datasets.tsv;
 done
 
 
@@ -115,6 +115,6 @@ Rscript ./src/__GEN_gene_built.R
 
 ## 8 Define Universe of Contexts
 echo -e "[INFO] CONTEXTS: Explore all the contexts across datasets to define unique entities."
-Rscript ./src/__CTX_context_built.R --PROFILESMATRIX ./data/CCL/geneFunc.rds --MATRICES "./data/CCL/portal-Avana-2018-05-10.csv:./data/CCL/portal-RNAi_merged-2018-05-10.csv" &> ./log/./src/__CTX_context_built.log;
+Rscript ./src/__CTX_context_built.R --PROFILESMATRIX ./data/CCL/geneFunc.rds --MATRICES "./data/CCL/portal-Avana-2018-05-10.csv:./data/CCL/portal-RNAi_merged-2018-05-10.csv" &> ./log/__CTX_context_built.log;
 
 

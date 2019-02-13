@@ -20,5 +20,5 @@ Rscript ./src/__ANN_hgnc_2012_to_2014.R &> ./log/__ANN_hgnc_2012_to_2014.log;
 
 ## 3 Build a Genomic Ranges object for the human genes along the genome
 echo -e "[INFO] Building a GenomicRanges object with genomic coordinates for the genes along the genome.";
-Rscript ./src/__ANN_prepareGenomicRegions.R &> ./log/./src/__ANN_prepareGenomicRegions.log;
+Rscript ./src/__ANN_prepareGenomicRegions.R &> ./log/__ANN_prepareGenomicRegions.log;
 
