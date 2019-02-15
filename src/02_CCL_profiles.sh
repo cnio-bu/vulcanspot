@@ -37,6 +37,8 @@ Rscript ./src/__ALT_genetic_alteration_built.R
 ### DEFINING DATASETS OF GENE ESSENTIALITY ##########################
 #####################################################################
 declare -A DS;
+declare -A DS_fname;
+declare -A DS_REF;
 
 ## Original version, the URLs are deprecated now
 ## It seems the DepMap data portal have changed the service they
@@ -52,7 +54,7 @@ declare -A DS;
 DS=( ["CRISPR"]="https://ndownloader.figshare.com/files/14342636?private_link=1c2f1319b7c95067fad6"
 	["RNAi"]="https://ndownloader.figshare.com/files/14342639?private_link=1c2f1319b7c95067fad6")
 
-DS_fname=( ["CRISPR"="portal-Avana-2018-05-10.csv"]
+DS_fname=( ["CRISPR"]="portal-Avana-2018-05-10.csv"
 ["RNAi"]="portal-RNAi_merged-2018-05-10.csv")
 
 DS_REF=( ["CRISPR"]="AVANA_18Q2"
@@ -76,18 +78,12 @@ download_DS() {
 }
 
 #####################################################################
-### GENE ESSENTIALITY PROPERTIES ####################################
-#####################################################################
-echo -e "[INFO] Gene Essentiality analysis."
-Rscript ./src/__CGD_gene_essentiality_analysis.R --DSNAMES CRISPR:RNAi --DEPMATRICES ./data/CCL/portal-Avana-2018-05-10.csv:./data/CCL/portal-RNAi_merged-2018-05-10.csv &> ./log/__CGD_gene_essentiality_analysis.log;
-
-
-#####################################################################
 ### DOWNLOAD DATASETS OF GENE DEPENDENCIES ##########################
 #####################################################################
 echo -e "id\tname\treference" > ./data/CCL/datasets.tsv;
 
 for dataset in "${!DS[@]}";do 
+	let "cnt=cnt+1";
 	ds_url=${DS[$dataset]};
 	ds_file="./data/CCL/${DS_fname[$dataset]}";
 	echo -e "[INFO] Starting processing '$dataset' at $(date)";
@@ -96,8 +92,14 @@ for dataset in "${!DS[@]}";do
 	download_DS $dataset $ds_url $ds_file;
 
 	echo -e "[INFO] ";
-	echo -e "1\t$dataset\t${DS_REF[$dataset]}" >> ./data/CCL/datasets.tsv;
+	echo -e "$cnt\t$dataset\t${DS_REF[$dataset]}" >> ./data/CCL/datasets.tsv;
 done
+
+#####################################################################
+### GENE ESSENTIALITY PROPERTIES ####################################
+#####################################################################
+echo -e "[INFO] Gene Essentiality analysis."
+Rscript ./src/__CGD_gene_essentiality_analysis.R --DSNAMES CRISPR:RNAi --DEPMATRICES ./data/CCL/portal-Avana-2018-05-10.csv:./data/CCL/portal-RNAi_merged-2018-05-10.csv &> ./log/__CGD_gene_essentiality_analysis.log;
 
 
 ## 7 Define Universe of genes and add gene annotations
