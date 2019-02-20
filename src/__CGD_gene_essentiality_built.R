@@ -5,7 +5,7 @@ library(reshape2)
 Genes.df <- read.table("./data/CCL/genes.tsv",sep="\t",header=TRUE,quote="",fill=TRUE)
 id_genes <- setNames(Genes.df$id,Genes.df$symbol)
 
-Datasets.df <- read.table("./data/CCL/datasets.txt",sep="\t",header=TRUE,quote="",fill=TRUE)
+Datasets.df <- read.table("./data/CCL/datasets.tsv",sep="\t",header=TRUE,quote="",fill=TRUE)
 id_datasets <- setNames(Datasets.df$id,Datasets.df$name)
 
 

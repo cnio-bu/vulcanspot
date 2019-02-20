@@ -35,6 +35,7 @@ Rscript ./src/__CGD_gene_essentiality_built.R
 ### TEST FOR GENETIC CANCER DEPENDENCIES ############################
 #####################################################################
 for dataset in "${!DS[@]}";do 
+	ds_file="${DS[$dataset]}";
 	echo -e "[INFO] Testing for GDs in '$dataset' dataset.";
 	Rscript ./src/__CGD_identify_genetic_dependencies.R --ESSENTIALITY $ds_file --GENEFUNCTION ./data/CCL/geneFunc.rds --SCALEESSENTIALLITY TRUE --MINSIZE 5 --MAXSIZE 2000 --DATASETNAME $dataset --NPROC 1 --NPERMUT 10000 --minimumSKEWNESS -0.5 &> ./log/__CGD_identify_genetic_dependencies.${dataset}.log;
 

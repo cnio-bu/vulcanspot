@@ -18,20 +18,14 @@ Rscript ./src/__GCN_hgnc_GRCh37.R &> ./log/__GCN_hgnc_GRCh37.log;
 
 ## 3 Process Point Mutations ###
 echo -e "[INFO] Processing MUT"
-Rscript ./src/__MUT_makeMatrix.R &> ./log/__MUT_makeMatrix.log;
+#Rscript ./src/__MUT_makeMatrix.R &> ./log/__MUT_makeMatrix.log;
 
 ## 4 Gene Functionality binarization ###
 echo -e "[INFO] Binarization of distinct molecular profiles for Alterations in Gene Functionality"
 Rscript ./src/__GFA_binary_gene_alteration.R &> ./log/__GFA_binary_gene_alteration.log;
 
-## 5 Define Genetic alterations
-echo -e "[INFO] Define genetic alterations : which cell lines harbor a given genetic alterations"
-Rscript ./src/__ALT_define_genetic_alterations.R &> ./log/__ALT_define_genetic_alterations.log;
 
-echo -e "[INFO] Built genetic alterations table."
-Rscript ./src/__ALT_genetic_alteration_built.R
-
-## 6 Define and download datasets of gene dependency: CRISPR & RNAi
+## 5 Define and download datasets of gene dependency: CRISPR & RNAi
 
 #####################################################################
 ### DEFINING DATASETS OF GENE ESSENTIALITY ##########################
@@ -101,8 +95,7 @@ done
 echo -e "[INFO] Gene Essentiality analysis."
 Rscript ./src/__CGD_gene_essentiality_analysis.R --DSNAMES CRISPR:RNAi --DEPMATRICES ./data/CCL/portal-Avana-2018-05-10.csv:./data/CCL/portal-RNAi_merged-2018-05-10.csv &> ./log/__CGD_gene_essentiality_analysis.log;
 
-
-## 7 Define Universe of genes and add gene annotations
+## 6 Define Universe of genes and add gene annotations
 echo -e "[INFO] GENES: Explore all the genes across datasets to define unique entities."
 Rscript ./src/__GEN_gene_universe.R --MATRICES "./data/CCL/geneFunc.rds:./data/CCL/portal-Avana-2018-05-10.csv:./data/CCL/portal-RNAi_merged-2018-05-10.csv" &> ./log/__GEN_gene_universe.log;
 
@@ -115,8 +108,14 @@ Rscript ./src/__GEN_mygene_annotation.R
 echo -e "[INFO] GENES: Build table."
 Rscript ./src/__GEN_gene_built.R
 
-## 8 Define Universe of Contexts
+## 7 Define Universe of Contexts
 echo -e "[INFO] CONTEXTS: Explore all the contexts across datasets to define unique entities."
 Rscript ./src/__CTX_context_built.R --PROFILESMATRIX ./data/CCL/geneFunc.rds --MATRICES "./data/CCL/portal-Avana-2018-05-10.csv:./data/CCL/portal-RNAi_merged-2018-05-10.csv" &> ./log/__CTX_context_built.log;
 
+## 8 Define Genetic alterations
+echo -e "[INFO] Define genetic alterations : which cell lines harbor a given genetic alterations"
+Rscript ./src/__ALT_define_genetic_alterations.R &> ./log/__ALT_define_genetic_alterations.log;
+
+echo -e "[INFO] Built genetic alterations table."
+Rscript ./src/__ALT_genetic_alteration_built.R
 
