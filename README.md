@@ -26,3 +26,6 @@ Vulcanspot's pipeline is based on R scripts that process, transform and compare 
 | `igraph` | Bioconductor | 1.2.2 |
 | `reshape2` | CRAN | 1.4.3 |
 | `mygene` | Bioconductor | 1.14.0 |
+
+- - - 
+![Alt text]("./figures/BU.png") ![Alt text]("./figures/cnio_stopcancer.png")
