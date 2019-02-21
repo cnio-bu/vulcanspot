@@ -5,6 +5,10 @@
 ### LICENSE : GPL-v3
 
 ##############################################################
+## Create directory if needed
+if [ ! -e ./data/DrugPrescription ];then mkdir ./data/DrugPrescription;fi
+
+##############################################################
 ## Define universe of drugs
 Rscript ./src/__DTP_drug_universe.R
 

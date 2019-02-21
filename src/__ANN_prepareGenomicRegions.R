@@ -1,3 +1,8 @@
+### TITLE : Create a GenomicRanges object of hg19 (UCSC)/GRCh37(ensEMBL)
+### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
+### DESCRIPTION : A genomic ranges object is created to allow the detection of large-span
+###	genomic deletions along several genes in the genomic coordinated system. These genes
+###	are cocurrent, obtaining similar statistics in GDs. We will annotate them later.
 
 suppressPackageStartupMessages(require(GenomicFeatures)) # used to create Genomic Intervals objects and get distances between genes.
 suppressPackageStartupMessages(require(TxDb.Hsapiens.UCSC.hg19.knownGene)) # human genes annotation: genomic regions
@@ -22,10 +27,17 @@ GR_genes2 <- genes(txdb)
 names(GR_genes2) <- dic2[names(GR_genes2)]
 GR_genes2 <- GR_genes2[names(GR_genes2)!=""]
 
+# Rename seqlevels to fit the
 seqlevels(GR_genes2) <- sapply(seqlevels(GR_genes2),function(Gseq) ifelse(Gseq %in% c(1:23,"X","Y"),paste0("chr",Gseq),Gseq))
 seqlevels(GR_genes2)[which(seqlevels(GR_genes2)=="MT")] <- "chrM"
-seqnames(GR_genes2) <- sapply(seqnames(GR_genes2),function(Gseq) ifelse(Gseq %in% c(1:23,"X","Y"),paste0("chr",Gseq),Gseq))
-seqnames(GR_genes2)[which(seqnames(GR_genes2)=="MT")] <- "chrM"
+
+# Rename seqnames, only needed in certain versions of GenomicRanges. Recent versions change
+# the names acoordingly when seqlevels is renamed.
+if(!all(as.character(seqnames(GR_genes2)) %in% seqlevels(GR_genes2))) {
+	seqnames(GR_genes2) <- sapply(seqnames(GR_genes2),function(Gseq) ifelse(Gseq %in% c(1:23,"X","Y"),paste0("chr",Gseq),Gseq))
+	seqnames(GR_genes2)[which(seqnames(GR_genes2)=="MT")] <- "chrM"
+  
+}
 
 # Combine both
 GR_genes <- c(GR_genes,GR_genes2[names(GR_genes2)[!names(GR_genes2) %in% names(GR_genes)]])
