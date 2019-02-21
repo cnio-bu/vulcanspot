@@ -29,4 +29,5 @@ Vulcanspot's pipeline is based on R scripts that process, transform and compare 
 
 - - - 
 <img src="./figures/BU.png" height="100" align="left">
-![Alt text](./figures/BU.png) ![Alt text](./figures/cnio_stopcancer.png)
+
+![Alt text](./figures/cnio_stopcancer.png)
