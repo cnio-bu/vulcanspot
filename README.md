@@ -28,4 +28,5 @@ Vulcanspot's pipeline is based on R scripts that process, transform and compare 
 | `mygene` | Bioconductor | 1.14.0 |
 
 - - - 
+<img src="./figures/BU.png" height="100" align="left">
 ![Alt text](./figures/BU.png) ![Alt text](./figures/cnio_stopcancer.png)
