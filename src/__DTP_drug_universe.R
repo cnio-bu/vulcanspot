@@ -1,3 +1,7 @@
+### TITLE : Create the 'drugs' table
+### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
+### LICENSE: GPL-v3
+
 options(stringsAsFactors = FALSE)
 
 PANDRUGS_cols <- c("name"="common_name", "internal_id"="pd_id")

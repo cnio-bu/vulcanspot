@@ -3,7 +3,6 @@
 ### TITLE : Define Genetic Alterations
 ### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
-### DESCRIPTION : This script
 
 options(stringsAsFactors = FALSE)
 
@@ -41,11 +40,9 @@ cat("---\n",file=stdout())
 GF.fl <- opt$GENEFUNCTION # GF.fl <- "./data/CCL/geneFunc.rds"
 fls <- as.vector(sapply(opt$DEPMATRICES,function(z) strsplit(z,split=":")[[1]]))
 
-
 ### 2 Read the Gene Funcionality Data (by GoF/LoF) #####
 cat("[INFO] Reading Gene Function status matrix (GoF/LoF)...\n",file=stdout())
 GF <- readRDS(GF.fl)
-
 
 ### 3 Create a library of Cell Sets based on Genetic alterations ##### 
 cat("[INFO] Creating a library of Cell Sets that harbor alterations in Gene A...\n",file=stdout())

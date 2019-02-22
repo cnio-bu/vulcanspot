@@ -1,4 +1,6 @@
-
+### TITLE: Create 'gene_essentiality' table
+### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
+### LICENSE : GPL-v3
 
 library(reshape2)
 

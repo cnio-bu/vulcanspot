@@ -1,6 +1,6 @@
-
-
-
+### TITLE : Create the 'genes' table
+### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
+### LICENSE : GPL-v3
 
 cols.interest <- c("symbol","name","role","description","entrez_id","driver","druggable","score")
 

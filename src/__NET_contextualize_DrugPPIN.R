@@ -1,4 +1,6 @@
-# UNDER CONSTRUCTION
+### TITLE: Contextualized Universal DPPIN by cell lineage (context)
+### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
+### LICENSE : GPL-v3
 
 options(stringsAsFactors = FALSE)
 suppressPackageStartupMessages(require(optparse))

@@ -1,6 +1,6 @@
-
-
-# UNDER CONSTRUCTION
+### TITLE : Create the genetic_alterations table based on preprocess data
+### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
+### LICENSE : GPL-v3
 
 CellSets <- readRDS(file="./data/CCL/cellsets.genetics.rds")
 CellSets2 <- readRDS(file="./data/CCL/cellsets.anydep.rds")

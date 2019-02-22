@@ -3,6 +3,9 @@
 ### TITLE : Drug Prescription following two strategies: knowledge-based and drug repositioning.
 ### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
+### DESCRIPTION : Gene Dependencies were detected in the previous step, pointing out the candidate
+###	targets for cancer therapies. Herein, two complementary approaches are used to prescribe
+###	drugs among these candidates.
 
 ##############################################################
 ## Create directory if needed
@@ -10,9 +13,11 @@ if [ ! -e ./data/DrugPrescription ];then mkdir ./data/DrugPrescription;fi
 
 ##############################################################
 ## Define universe of drugs
+echo -e "[INFO] Obtaining the universe of drugs.";
 Rscript ./src/__DTP_drug_universe.R
 
 ## Define sources
+echo -e "[INFO] Obtaining the universe of sources (pandrugs and lincs).";
 echo -e "id\tname" > ./data/DrugPrescription/sources.tsv
 echo -e "1\tPANDRUGS" >> ./data/DrugPrescription/sources.tsv
 echo -e "2\tLINCS" >> ./data/DrugPrescription/sources.tsv
@@ -27,7 +32,7 @@ echo -e "2\tLINCS" >> ./data/DrugPrescription/sources.tsv
 
 	# Piñeiro-Yáñez E et al. PanDrugs: a novel method to prioritize anticancer drug treatments 
 	# according to individual genomic data. Genome Med. 2018 May 31;10(1):41
-
+echo -e "[INFO] Prescribing drugs using PanDrugs system."
 bash ./src/__DTP_KB_pandrugs.sh;
 
 
@@ -38,6 +43,7 @@ bash ./src/__DTP_KB_pandrugs.sh;
 # of drugs which mimic the gene knock-down effect in different contexts.
 # You can check the supplementary information from the manuscirpt to better
 # understand this step.
+echo -e "[INFO] Prescribing drugs using KDCP approach."
 
 ## Calculated TAU matrices for the KDCP approach
 declare -A TAU;

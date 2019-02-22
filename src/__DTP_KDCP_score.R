@@ -3,7 +3,9 @@
 ### TITLE : Calculate KDCP score
 ### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
-
+### DESCRIPTION : The TAU scores (similarity between KD-CP perturbations)
+###	are adjusted by the distance of the drugs to the different targets
+###	in a contextualized Drug-Protein-Protein Interaction network (DPPIN).
 
 options(stringsAsFactors = FALSE)
 

@@ -1,7 +1,6 @@
 ### TITLE : Create the Protein-Protein-Drug interaction network based on PINA
 ### AUTHOR: Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
-### DESCRIPTION : 
 
 options(stringsAsFactors = FALSE)
 suppressPackageStartupMessages(require(igraph))

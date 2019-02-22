@@ -3,7 +3,12 @@
 ### TITLE : Cancer Gene dependency by Kolmogorov-Smirnov test
 ### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
-### DESCRIPTION : This script
+### DESCRIPTION : The core of vulcanSpot is the identification of Gene Dependencies (GD)
+###	to be proposed as therapeutic targets. Herein, GD relationships are obtained using
+###	a Kolmogorov-Smirnov test of gene dependencies by Cell Sets that harbor a particular
+###	mutation as compared to the cell lines without the mutation. Filtering criteria to
+###	avoid multiple testing is set up. Also the multiple testing adjustment of p-values
+###	to avoid false positives.
 
 options(stringsAsFactors = FALSE)
 

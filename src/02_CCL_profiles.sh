@@ -3,9 +3,7 @@
 ### TITLE : Data processing for the molecular profiles (GEP,GCN,MUT) of Cancer Cell Lines (CCL)
 ### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
-### DESCRIPTION : 
-
-
+### DESCRIPTION : Get and reformat molecular data to make statistical associations
 
 ## 1 Process Gene Expression Profiles ###
 echo -e "[INFO] Processing GEPs"
@@ -26,7 +24,6 @@ Rscript ./src/__GFA_binary_gene_alteration.R &> ./log/__GFA_binary_gene_alterati
 
 
 ## 5 Define and download datasets of gene dependency: CRISPR & RNAi
-
 #####################################################################
 ### DEFINING DATASETS OF GENE ESSENTIALITY ##########################
 #####################################################################
@@ -118,4 +115,3 @@ Rscript ./src/__ALT_define_genetic_alterations.R &> ./log/__ALT_define_genetic_a
 
 echo -e "[INFO] Built genetic alterations table."
 Rscript ./src/__ALT_genetic_alteration_built.R
-

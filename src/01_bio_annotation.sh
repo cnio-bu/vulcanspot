@@ -1,10 +1,9 @@
 #!/bin/bash
 
-### TITLE : Get annotation for biological entities (gene, drugs, etc) which will be used for further data processing
+### TITLE : Prepare and process genomic ranges for GRCh37 (Homo sapiens)
 ### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
-### DESCRIPTION : 
-
+### DESCRIPTION : Get annotation for Gene annotation and Genomic ranges, which will be used for further data processing
 
 ## 1 Create the directory for Annotations
 if [ ! -e ./data/Annotation ];then
@@ -28,4 +27,3 @@ Rscript ./src/__ANN_hgnc_2012_to_2014.R &> ./log/__ANN_hgnc_2012_to_2014.log;
 ## 4 Build a Genomic Ranges object for the human genes along the genome
 echo -e "[INFO] Building a GenomicRanges object with genomic coordinates for the genes along the genome.";
 Rscript ./src/__ANN_prepareGenomicRegions.R &> ./log/__ANN_prepareGenomicRegions.log;
-

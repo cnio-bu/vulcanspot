@@ -3,7 +3,9 @@
 ### TITLE : Analysis on Gene Essentiality
 ### AUTHOR : Perales-Paton, Javier - jperales@cnio.es
 ### LICENSE : GPL-v3
-### DESCRIPTION : This script
+### DESCRIPTION : Although vulcanSpot is based on GD (gene pairs) interactions,
+###	here single gene statistics on gene dependencies are obtained just
+###	to be stored for the database and display to the user.
 
 options(stringsAsFactors = FALSE)
 
