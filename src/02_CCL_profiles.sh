@@ -16,7 +16,7 @@ Rscript ./src/__GCN_hgnc_GRCh37.R &> ./log/__GCN_hgnc_GRCh37.log;
 
 ## 3 Process Point Mutations ###
 echo -e "[INFO] Processing MUT"
-#Rscript ./src/__MUT_makeMatrix.R &> ./log/__MUT_makeMatrix.log;
+Rscript ./src/__MUT_makeMatrix.R &> ./log/__MUT_makeMatrix.log;
 
 ## 4 Gene Functionality binarization ###
 echo -e "[INFO] Binarization of distinct molecular profiles for Alterations in Gene Functionality"
