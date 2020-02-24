@@ -1,0 +1,17 @@
+projects : 'projects.tsv'                                      # TCGA projects to parse
+inputdir : '/raid/RAW/PAN-TCGA'                                # Where to look for said projects
+tablesdir: '/home/sagarcia/Documents/TFM/generated/tcga'       # Where to save generated tables
+plotdir  : '/home/sagarcia/Documents/TFM/generated/tcga/plots' # Where to save plots
+logdir   : 'log/test'                                          # Where to save events log.
+
+# RULES MARKED AS PANDAS SC are single threaded by nature, so there is no point
+# in adding more cores, they won't go faster. Mem_mb is NOT a hard RAM limit,
+# but an stimation of  max memory consumption (and thus, memory to allocate) 
+# to be fed to the cluster query manager when executing the pipeline on cluster 
+# environemtns. 
+
+rules:
+    default:
+        res:
+            threads: 1
+            mem_mb:  4096 
