@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>schema</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+  <data-source id="DS2">
+   <property key="Connection Type" value="PostgreSQL" />
+   <property key="Logical" value="PlayPen Database" />
+   <property key="JDBC URL" value="jdbc:postgresql://viper:5432/vulcanspot" />
+   <property key="UID" value="vulcan" />
+   <property key="PWD" value="vulcanspot2018" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+  <database id="DB0" populated="true" UUID="0a759dd8-4c6e-4415-a0ec-e0e3721a9fc2" dbcs-ref="DS2" name="PlayPen Database" physicalName="alpes" >
+   <catalog id="CAT1" populated="true" UUID="2034b2e3-b67c-4419-a62b-a8cd7c876c11" name="vulcanspot" nativeTerm="database" physicalName="vulcanspot" >
+    <schema id="SCH2" populated="false" UUID="bda7ab59-f637-4c9f-9337-40398c5d90af" name="information_schema" nativeTerm="schema" physicalName="information_schema" >
+    </schema>
+    <schema id="SCH3" populated="true" UUID="69a7ff8f-6d80-4e4e-88b2-baa8cae6623b" name="pg_catalog" nativeTerm="schema" physicalName="pg_catalog" >
+    </schema>
+    <schema id="SCH4" populated="false" UUID="62164b42-fcde-4773-acd9-7f9d581fc286" name="pg_toast_temp_1" nativeTerm="schema" physicalName="pg_toast_temp_1" >
+    </schema>
+    <schema id="SCH5" populated="true" UUID="c55162cb-213b-4b4e-986b-606e51e84c93" name="public" nativeTerm="schema" physicalName="public" >
+     <table id="TAB6" populated="false" UUID="db77a194-566e-499f-ab92-95335bc7bcfe" name="contexts" objectType="TABLE" physicalName="contexts" >
+      <remarks></remarks>
+      <folder id="FOLTAB61" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX7" populated="true" UUID="519509d4-b3ab-4736-bda8-7c2f5e472fde" clustered="false" name="contexts_pk" physicalName="contexts_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB8" populated="false" UUID="0b57eb2c-f84e-487f-b5a2-0393d37eaa73" name="drugs" objectType="TABLE" physicalName="drugs" >
+      <remarks></remarks>
+      <folder id="FOLTAB81" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX9" populated="true" UUID="b97c9fd7-56eb-4f8a-b2ae-cb774beef5d1" clustered="false" name="drugs_pk" physicalName="drugs_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB10" populated="false" UUID="9ed45ddb-bacc-4e01-bfb7-272544bf80aa" name="genes" objectType="TABLE" physicalName="genes" >
+      <remarks></remarks>
+      <folder id="FOLTAB101" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX11" populated="true" UUID="8fa8e8c3-68ae-446b-b7d5-0a7dbc9c35f1" clustered="false" name="genes_pk" physicalName="genes_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB12" populated="false" UUID="e7828a1e-0454-4e30-bfdf-fcf39fdec3ed" name="lnk_relationships_drugs" objectType="TABLE" physicalName="lnk_relationships_drugs" >
+      <remarks></remarks>
+      <folder id="FOLTAB121" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX13" populated="true" UUID="e7ad58c9-c0be-41be-8a20-cdec6c31e6b6" clustered="false" name="lnk_relationships_drugs_pk" physicalName="lnk_relationships_drugs_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+     <table id="TAB14" populated="false" UUID="a87df607-8eff-4127-81d5-edda5cde4ea3" name="relationships" objectType="TABLE" physicalName="relationships" >
+      <remarks></remarks>
+      <folder id="FOLTAB141" populated="false" name="Columns" physicalName="Columns" type="1">
+       <index id="IDX15" populated="true" UUID="0deccbae-fec6-4d15-b685-fdc6f425f8ac" clustered="false" name="relationships_pk" physicalName="relationships_pk" primaryKeyIndex="true" unique="false" >
+       </index>
+      </folder>
+     </table>
+    </schema>
+   </catalog>
+   <relationships>
+   </relationships>
+  </database>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB17" populated="true" UUID="95e6827a-94f2-4807-8991-06b8fc98b5b6" name="relationships" objectType="TABLE" physicalName="relationships" >
+   <remarks></remarks>
+   <folder id="FOLTAB171" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL18" populated="true" UUID="e2a7fe3d-434e-410e-ad03-1a8286136bcb" autoIncrement="false" autoIncrementSequenceName="relationships_id_datasets_seq" defaultValue="" name="id_datasets" nullable="0" physicalName="id_datasets" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="59ce083a-facf-47db-a420-cb12157d2444" autoIncrement="false" autoIncrementSequenceName="genes_id_genes_seq" defaultValue="" name="id_genes_B" nullable="0" physicalName="id_genes_B" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="7bd87d62-b3c0-43df-9b02-52f9753743bf" autoIncrement="false" autoIncrementSequenceName="genes_id_genetic_alterations_seq" defaultValue="" name="id_genetic_alterations" nullable="0" physicalName="id_genetic_alterations" precision="0" primaryKeySeq="2" referenceCount="0" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="bf21ce2e-c08a-449b-b7c0-336ad539d6bf" autoIncrement="false" autoIncrementSequenceName="relationships_nes_seq" defaultValue="" name="nes" nullable="0" physicalName="nes" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="6e794c15-6f1f-444e-a77d-a3cb09008a46" autoIncrement="false" autoIncrementSequenceName="relationships_pval_seq" defaultValue="" name="pval" nullable="0" physicalName="pval" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="31d4f630-3a66-48dd-b52f-fdbe8a90ceae" autoIncrement="false" autoIncrementSequenceName="relationships_fdr_seq" defaultValue="" name="fdr" nullable="0" physicalName="fdr" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="fa2c89ff-2214-4e71-a7d1-b0b97668d8ef" autoIncrement="false" autoIncrementSequenceName="relationships_score_seq" defaultValue="" name="score" nullable="0" physicalName="score" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="b4dc0b7e-b99b-45bb-816f-3e46d4470c1c" autoIncrement="false" autoIncrementSequenceName="relationships_avg_seq" defaultValue="" name="avg" nullable="0" physicalName="avg" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB173" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB172" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB174" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX26" populated="true" UUID="b5726f4c-f2e1-4117-afce-fc32f88727db" clustered="false" name="pk_relationships" physicalName="pk_relationships" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC27" populated="true" UUID="12cb65bc-89c8-4ee8-ab46-e4778448bde2" ascendingOrDescending="UNSPECIFIED" column-ref="COL18" name="id_datasets" physicalName="id_datasets" />
+     <index-column id="IDC28" populated="true" UUID="81c9ba05-f1e0-411c-99c1-bf9ec4c668ec" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="id_genes_B" physicalName="id_genes_B" />
+     <index-column id="IDC29" populated="true" UUID="e4d73167-85f1-46a2-938f-20a5da66548e" ascendingOrDescending="UNSPECIFIED" column-ref="COL20" name="id_genetic_alterations" physicalName="id_genetic_alterations" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB30" populated="true" UUID="c66c08f4-00a2-4ebe-a3c2-96a579d8a6e3" name="genes" objectType="TABLE" physicalName="genes" >
+   <remarks></remarks>
+   <folder id="FOLTAB301" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL31" populated="true" UUID="8f6966a3-e8b7-495f-9863-34f5b558b23a" autoIncrement="false" autoIncrementSequenceName="genes_id_seq_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="a732b009-e31b-4c4e-8d8c-f7bcd2631868" autoIncrement="false" autoIncrementSequenceName="genes_symbol_seq" defaultValue="" name="symbol" nullable="0" physicalName="symbol" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="bacbf9a9-dbf5-4253-a14b-7bfddef3f5dd" autoIncrement="false" autoIncrementSequenceName="genes_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="c0538c79-293b-4b1f-bd8b-11cf9181d5a1" autoIncrement="false" autoIncrementSequenceName="genes_role_seq" defaultValue="" name="role" nullable="0" physicalName="role" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="70a29d02-3a51-40db-8c6e-97cba288212f" autoIncrement="false" autoIncrementSequenceName="genes_description_seq" defaultValue="" name="description" nullable="0" physicalName="description" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="39784e5d-ef81-400f-a560-9143699ca29c" autoIncrement="false" autoIncrementSequenceName="genes_entrez_id_seq" defaultValue="" name="entrez_id" nullable="1" physicalName="entrez_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="a6ee7b76-6258-4f59-a782-a610eb9b6e36" autoIncrement="false" autoIncrementSequenceName="genes_driver_seq" defaultValue="" name="driver" nullable="0" physicalName="driver" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="64ec1175-74ac-4158-bd02-ccc27539161e" autoIncrement="false" autoIncrementSequenceName="genes_druggable_seq" defaultValue="" name="druggable" nullable="0" physicalName="druggable" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="1d2e38e3-3204-41d8-94fd-ea8156baf165" autoIncrement="false" autoIncrementSequenceName="genes_score_seq" defaultValue="" name="score" nullable="0" physicalName="score" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB303" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB302" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB304" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX40" populated="true" UUID="df37bb6b-f809-4349-a9e3-2b417ceef295" clustered="false" name="pk_genes" physicalName="pk_genes" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC41" populated="true" UUID="2ab636e0-98f7-48bd-b0cd-ceb21e8e31d7" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="id" physicalName="id" />
+    </index>
+    <index id="IDX42" populated="true" UUID="d66c2746-e9d8-4462-91fd-eed2dd4e3880" clustered="false" name="genes_idx" physicalName="genes_idx" primaryKeyIndex="false" unique="false" >
+     <index-column id="IDC43" populated="true" UUID="8c92f87f-73e6-4aaf-85c3-c1759cc63174" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="symbol" physicalName="symbol" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB44" populated="true" UUID="146aca00-8ffc-428a-a2f0-d81b29f11397" name="contexts" objectType="TABLE" physicalName="contexts" >
+   <remarks></remarks>
+   <folder id="FOLTAB441" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL45" populated="true" UUID="137d006a-997c-4487-a6c3-e5e24d6d84a2" autoIncrement="false" autoIncrementSequenceName="contexts_id_seq_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="3b7ecda2-29fe-4b2a-8290-f4c77f856dac" autoIncrement="false" autoIncrementSequenceName="contexts_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB443" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB442" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB444" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX47" populated="true" UUID="323f4e55-624b-4f50-a795-9c514b630b3f" clustered="false" name="pk_contexts" physicalName="pk_contexts" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC48" populated="true" UUID="237728d9-86d1-4b9f-a038-90f531be3d81" ascendingOrDescending="UNSPECIFIED" column-ref="COL45" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB49" populated="true" UUID="cd6e4826-5ef6-45c2-b7a5-00608105824b" name="drugs" objectType="TABLE" physicalName="drugs" >
+   <remarks></remarks>
+   <folder id="FOLTAB491" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL50" populated="true" UUID="83beb184-b53b-43ab-9901-31eebcaa4c00" autoIncrement="false" autoIncrementSequenceName="drugs_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL51" populated="true" UUID="3e92153d-d7ad-4800-bd1d-5e5d2199468c" autoIncrement="false" autoIncrementSequenceName="drugs_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB493" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB492" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB494" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX52" populated="true" UUID="e302db67-f548-4a58-9b08-02843154b43f" clustered="false" name="pk_drugs" physicalName="pk_drugs" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC53" populated="true" UUID="16a97b89-2086-438a-b64a-39c9f466ef39" ascendingOrDescending="UNSPECIFIED" column-ref="COL50" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB54" populated="true" UUID="cf89c0e5-fc32-422d-9ef8-af627f3ded5e" name="lnk_genes_drugs" objectType="TABLE" physicalName="lnk_genes_drugs" >
+   <remarks></remarks>
+   <folder id="FOLTAB541" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL55" populated="true" UUID="d87a6059-89c3-4a16-ae3d-8db793c02172" autoIncrement="false" autoIncrementSequenceName="id_drugs_seq" defaultValue="" name="id_drugs" nullable="0" physicalName="id_drugs" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="21f52bfc-5e4e-441a-8e05-6a511f491fb0" autoIncrement="false" autoIncrementSequenceName="lnk_genes_drugs_id_genes_seq" defaultValue="" name="id_genes" nullable="0" physicalName="id_genes" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL57" populated="true" UUID="2d1cc389-0379-4315-b2e6-487d391c39aa" autoIncrement="false" autoIncrementSequenceName="lnk_genes_drugs_id_contexts_seq" defaultValue="" name="id_contexts" nullable="0" physicalName="id_contexts" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL58" populated="true" UUID="f7f77e42-4adc-4dbf-9172-cac16556c465" autoIncrement="false" autoIncrementSequenceName="lnk_genes_drugs_id_sources_seq" defaultValue="" name="id_sources" nullable="0" physicalName="id_sources" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL59" populated="true" UUID="b2680623-6b54-4dfd-b2b9-af4b5dbbe5f6" autoIncrement="false" autoIncrementSequenceName="lnk_genes_drugs_score_seq" defaultValue="" name="score" nullable="0" physicalName="score" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB543" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB542" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB544" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX60" populated="true" UUID="cb6602c4-1338-420f-93cd-f0fb09c08221" clustered="false" name="pk_lnk_genes_drugs" physicalName="pk_lnk_genes_drugs" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC61" populated="true" UUID="dd0fae28-57b7-4565-b920-6c35d05f7f7e" ascendingOrDescending="UNSPECIFIED" column-ref="COL55" name="id_drugs" physicalName="id_drugs" />
+     <index-column id="IDC62" populated="true" UUID="8f20d91c-85d5-4045-bbaf-5223d92332f4" ascendingOrDescending="UNSPECIFIED" column-ref="COL56" name="id_genes" physicalName="id_genes" />
+     <index-column id="IDC63" populated="true" UUID="795d4e0f-e799-466f-be06-5d973ce6b67a" ascendingOrDescending="UNSPECIFIED" column-ref="COL57" name="id_contexts" physicalName="id_contexts" />
+     <index-column id="IDC64" populated="true" UUID="00a56342-6701-4586-9514-04a6a99b3ce4" ascendingOrDescending="UNSPECIFIED" column-ref="COL58" name="id_sources" physicalName="id_sources" />
+    </index>
+    <index id="IDX65" populated="true" UUID="f824381d-9adc-4d33-befa-03bbe09f9dca" clustered="false" name="idx_lgd_id_contexts" physicalName="idx_lgd_id_contexts" primaryKeyIndex="false" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB66" populated="true" UUID="b6ce75be-93ef-4920-a3ce-62a075d3969b" name="datasets" objectType="TABLE" physicalName="datasets" >
+   <remarks></remarks>
+   <folder id="FOLTAB661" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL67" populated="true" UUID="25ff8768-332e-4a7c-9eab-92760fadab97" autoIncrement="false" autoIncrementSequenceName="datasets_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL68" populated="true" UUID="86fb6e92-a304-477f-8b04-bc6ac566ef09" autoIncrement="false" autoIncrementSequenceName="datasets_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL69" populated="true" UUID="fa308b03-7935-40fd-b593-e3348ef4f865" autoIncrement="false" autoIncrementSequenceName="datasets_reference_seq" defaultValue="" name="reference" nullable="1" physicalName="reference" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB663" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB662" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB664" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX70" populated="true" UUID="38aa12d1-2833-4421-9f3a-9cdaa37d7abe" clustered="false" name="pk_datasets" physicalName="pk_datasets" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC71" populated="true" UUID="e56f9b6a-bc19-4e34-a902-8a4eceab7e4c" ascendingOrDescending="UNSPECIFIED" column-ref="COL67" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB72" populated="true" UUID="267412fa-0ea3-4429-8ee7-d85d9c584a6b" name="genetic_alterations" objectType="TABLE" physicalName="genetic_alterations" >
+   <remarks></remarks>
+   <folder id="FOLTAB721" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL73" populated="true" UUID="04e37702-077b-436b-826f-ea5a37d9bb8f" autoIncrement="false" autoIncrementSequenceName="genetic_alterations_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="3" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL74" populated="true" UUID="86a8a0c2-5852-4612-bd1f-113776b69a3c" autoIncrement="false" autoIncrementSequenceName="genetic_alterations_id_genes_seq" defaultValue="" name="id_genes" nullable="0" physicalName="id_genes" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL75" populated="true" UUID="9e706544-264c-464d-8859-6c9c6f6e8478" autoIncrement="false" autoIncrementSequenceName="genetic_alterations_id_contexts_seq" defaultValue="" name="id_contexts" nullable="0" physicalName="id_contexts" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL76" populated="true" UUID="98fcc6f3-2760-4c81-8a9a-4001abeba5f4" autoIncrement="false" autoIncrementSequenceName="genetic_alterations_alteration_seq" defaultValue="" name="alteration" nullable="0" physicalName="alteration" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL77" populated="true" UUID="578fa196-d777-476d-bf58-8b3237308c1d" autoIncrement="false" autoIncrementSequenceName="genetic_alterations_freq_seq" defaultValue="" name="freq" nullable="0" physicalName="freq" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB723" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB722" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB724" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX78" populated="true" UUID="53151aa1-c3a1-4f28-9bce-513ce2ac67da" clustered="false" name="pk_genetic_alterations" physicalName="pk_genetic_alterations" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC79" populated="true" UUID="8c012539-a1b1-42f1-bed8-1d4fa0db503d" ascendingOrDescending="UNSPECIFIED" column-ref="COL73" name="id" physicalName="id" />
+    </index>
+    <index id="IDX80" populated="true" UUID="9767308a-e1c2-4031-adad-e8be30eeb61a" clustered="false" name="id_ga_id_contexts" physicalName="id_ga_id_contexts" primaryKeyIndex="false" unique="false" >
+     <index-column id="IDC81" populated="true" UUID="a5d47d96-6caa-47e1-94f8-4a3910100fc5" ascendingOrDescending="UNSPECIFIED" column-ref="COL75" name="id_contexts" physicalName="id_contexts" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB82" populated="true" UUID="b98255d3-89a6-4129-ad1b-47eb8deb543f" name="gene_essentiality" objectType="TABLE" physicalName="gene_essentiality" >
+   <remarks></remarks>
+   <folder id="FOLTAB821" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL83" populated="true" UUID="08bb9a52-b2eb-4ca3-851e-f1472da558e4" autoIncrement="false" autoIncrementSequenceName="gene_essentiality_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="3" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL84" populated="true" UUID="fb7ec8ff-62e7-43cf-bc76-066e9e9d83af" autoIncrement="false" autoIncrementSequenceName="gene_essentiality_id_genes_seq" defaultValue="" name="id_genes" nullable="0" physicalName="id_genes" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL85" populated="true" UUID="ddc9df8d-4ef4-4886-a78e-086096dd4305" autoIncrement="false" autoIncrementSequenceName="gene_essentiality_id_datasets_seq" defaultValue="" name="id_datasets" nullable="0" physicalName="id_datasets" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL86" populated="true" UUID="e0d1d3c7-9fa8-45a7-82cd-ea916b626bb4" autoIncrement="false" autoIncrementSequenceName="gene_essentiality_skewness_seq" defaultValue="" name="skewness" nullable="1" physicalName="skewness" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB823" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB822" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB824" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX87" populated="true" UUID="66c718c1-b22d-411d-8bf2-c396aed9201a" clustered="false" name="pk_gene_essentiality" physicalName="pk_gene_essentiality" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC88" populated="true" UUID="b6ab71f3-970c-4ef9-8e4d-440171149afa" ascendingOrDescending="UNSPECIFIED" column-ref="COL83" name="id" physicalName="id" />
+    </index>
+    <index id="IDX89" populated="true" UUID="c7ebd1d2-56f4-4522-8609-b2746d2aacda" clustered="false" name="gene_essentiality_uidx" physicalName="gene_essentiality_uidx" primaryKeyIndex="false" unique="true" >
+     <index-column id="IDC90" populated="true" UUID="59e1c7d9-09cb-4ca3-81d3-25404cd80d4a" ascendingOrDescending="UNSPECIFIED" column-ref="COL84" name="id_genes" physicalName="id_genes" />
+     <index-column id="IDC91" populated="true" UUID="3d718a08-5b54-41a3-bda0-e72d995f7ea6" ascendingOrDescending="UNSPECIFIED" column-ref="COL85" name="id_datasets" physicalName="id_datasets" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB92" populated="true" UUID="1d1ec150-faa9-4a1c-9c9b-f108fc729073" name="sources" objectType="TABLE" physicalName="sources" >
+   <remarks></remarks>
+   <folder id="FOLTAB921" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL93" populated="true" UUID="5c4244e8-246a-4ac3-968a-42450671dc28" autoIncrement="false" autoIncrementSequenceName="sources_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL94" populated="true" UUID="9a677b79-46d5-44eb-86b5-fe82a09a555e" autoIncrement="false" autoIncrementSequenceName="sources_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB923" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB922" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB924" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX95" populated="true" UUID="b349655f-f79e-495a-8e13-5b7204e12a99" clustered="false" name="pk_sources" physicalName="pk_sources" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC96" populated="true" UUID="91094286-c08c-447c-b555-f6a798ee1c47" ascendingOrDescending="UNSPECIFIED" column-ref="COL93" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB97" populated="true" UUID="450125cd-cf2a-4bbf-8124-e4a2b0d1fb9c" name="validations" objectType="TABLE" physicalName="validations" >
+   <remarks></remarks>
+   <folder id="FOLTAB971" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL98" populated="true" UUID="1a43307b-bdbc-468a-8456-412f755cf837" autoIncrement="false" autoIncrementSequenceName="validations_genesab_seq" defaultValue="" name="genesab" nullable="0" physicalName="genesab" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL99" populated="true" UUID="30a7d5fc-e852-40cb-bff2-b8bb3481f4f7" autoIncrement="false" autoIncrementSequenceName="lnk_genes_drugs_id_contexts_seq" defaultValue="" name="id_contexts" nullable="0" physicalName="id_contexts" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" source-column-ref="COL57" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL100" populated="true" UUID="f2bdbd81-d82d-4dac-9816-e2d49c3aa0e9" autoIncrement="false" autoIncrementSequenceName="lnk_genes_drugs_id_genes_seq" defaultValue="" name="id_genes" nullable="0" physicalName="id_genes" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" source-column-ref="COL56" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL101" populated="true" UUID="d5db9b67-30ee-4260-bcba-f4d6926e2f99" autoIncrement="false" defaultValue="" name="id_drugs" nullable="0" physicalName="id_drugs" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" source-column-ref="COL55" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL102" populated="true" UUID="77b7bad5-4da4-4b34-9929-05848a3edddb" autoIncrement="false" autoIncrementSequenceName="lnk_genes_drugs_id_sources_seq" defaultValue="" name="id_sources" nullable="0" physicalName="id_sources" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" source-column-ref="COL58" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL103" populated="true" UUID="4498eab8-a047-4b4f-97e8-5c8157bfac1e" autoIncrement="false" autoIncrementSequenceName="validations_stat_seq" defaultValue="" name="stat" nullable="0" physicalName="stat" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL104" populated="true" UUID="b982e9e9-8e51-42c0-81ec-ba4416bf979d" autoIncrement="false" autoIncrementSequenceName="validations_pval_seq" defaultValue="" name="pval" nullable="0" physicalName="pval" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL105" populated="true" UUID="90f2d4e3-350f-4427-9802-dad298583c4c" autoIncrement="false" autoIncrementSequenceName="validations_fdr_seq" defaultValue="" name="fdr" nullable="0" physicalName="fdr" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB973" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB972" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB974" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX106" populated="true" UUID="0017f6c2-57d2-4490-ad89-cbdc4004632e" clustered="false" name="pk_validations" physicalName="pk_validations" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC107" populated="true" UUID="99994ba1-f3f2-456d-b823-c2cb6173e654" ascendingOrDescending="UNSPECIFIED" column-ref="COL98" name="genesab" physicalName="genesab" />
+     <index-column id="IDC108" populated="true" UUID="016a5b8d-d2a9-427c-a436-cd94b24689d3" ascendingOrDescending="UNSPECIFIED" column-ref="COL99" name="id_contexts" physicalName="id_contexts" />
+     <index-column id="IDC109" populated="true" UUID="e9d9e6a3-25cd-42b7-b47a-5eae62d1d37e" ascendingOrDescending="UNSPECIFIED" column-ref="COL100" name="id_genes" physicalName="id_genes" />
+     <index-column id="IDC110" populated="true" UUID="bb02d34e-0d9a-43bf-a44a-b976e3ffe59c" ascendingOrDescending="UNSPECIFIED" column-ref="COL101" name="id_drugs" physicalName="id_drugs" />
+     <index-column id="IDC111" populated="true" UUID="e26dd88a-e154-4bbb-b2be-9f81c8976655" ascendingOrDescending="UNSPECIFIED" column-ref="COL102" name="id_sources" physicalName="id_sources" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL112" populated="true" UUID="2ac09136-05c7-42e9-a1d7-8a6e620bb021" deferrability="7" deleteRule="3" fk-table-ref="TAB54" fkCardinality="7" identifying="false" name="genes_lnk_genes_drugs_fk" physicalName="genes_lnk_genes_drugs_fk" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP113" populated="true" UUID="d75ed7c8-3b14-423f-acd4-8b86539e356a" fk-column-ref="COL56" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
+   </relationship>
+   <relationship id="REL114" populated="true" UUID="187e732e-20cf-4e29-981c-8f3443473857" deferrability="7" deleteRule="3" fk-table-ref="TAB72" fkCardinality="7" identifying="false" name="genes_genetic_alterations_fk" physicalName="genes_genetic_alterations_fk" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP115" populated="true" UUID="2b5dad9f-8b14-4ffa-84d7-7be038d5af0c" fk-column-ref="COL74" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
+   </relationship>
+   <relationship id="REL116" populated="true" UUID="6980372f-5ee9-4a5b-aae8-2eed98403ed0" deferrability="7" deleteRule="3" fk-table-ref="TAB82" fkCardinality="7" identifying="false" name="genes_gene_essentiality_fk" physicalName="genes_gene_essentiality_fk" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP117" populated="true" UUID="320b8142-f3d7-4872-9432-36c01a8e60d3" fk-column-ref="COL84" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
+   </relationship>
+   <relationship id="REL118" populated="true" UUID="1853eb39-c064-4762-8973-f158fde435cd" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="genes_relationships_fk1" physicalName="genes_relationships_fk1" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP119" populated="true" UUID="d9fa06b5-bd48-4900-bd69-aba2a4e46793" fk-column-ref="COL19" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
+   </relationship>
+   <relationship id="REL120" populated="true" UUID="5d4e328d-d2d8-439d-b27d-f3676e4a9cae" deferrability="7" deleteRule="3" fk-table-ref="TAB54" fkCardinality="7" identifying="false" name="contexts_lnk_genes_drugs_fk" physicalName="contexts_lnk_genes_drugs_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP121" populated="true" UUID="361d4f5a-371b-4c31-b122-a4a52366388b" fk-column-ref="COL57" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   </relationship>
+   <relationship id="REL122" populated="true" UUID="74399b4d-0bb2-4207-8bd5-18ea979ae673" deferrability="7" deleteRule="3" fk-table-ref="TAB72" fkCardinality="7" identifying="false" name="contexts_genetic_alterations_fk" physicalName="contexts_genetic_alterations_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP123" populated="true" UUID="40975d2d-ccbc-43cd-a5a3-76cc153ee23c" fk-column-ref="COL75" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   </relationship>
+   <relationship id="REL124" populated="true" UUID="5f9414ad-1916-40d5-a85d-aea81adc233b" deferrability="7" deleteRule="3" fk-table-ref="TAB54" fkCardinality="7" identifying="true" name="drugs_lnk_genes_drugs_fk" physicalName="drugs_lnk_genes_drugs_fk" pk-table-ref="TAB49" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP125" populated="true" UUID="832c9208-4a73-447b-8659-a2ceed3d3718" fk-column-ref="COL55" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL50" />
+   </relationship>
+   <relationship id="REL126" populated="true" UUID="82c4265b-ef3f-4394-a342-a97f2d07a2b7" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="datasets_relationships_fk" physicalName="datasets_relationships_fk" pk-table-ref="TAB66" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP127" populated="true" UUID="4e3a241d-cfff-44eb-b888-b95f193aee55" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL67" />
+   </relationship>
+   <relationship id="REL128" populated="true" UUID="4e85f363-0ec4-473d-8cec-72e47314508b" deferrability="7" deleteRule="3" fk-table-ref="TAB82" fkCardinality="7" identifying="false" name="datasets_gene_essentiality_fk" physicalName="datasets_gene_essentiality_fk" pk-table-ref="TAB66" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP129" populated="true" UUID="804a43e0-1c20-4c59-92d5-9f7f3d625c80" fk-column-ref="COL85" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL67" />
+   </relationship>
+   <relationship id="REL130" populated="true" UUID="99c7f4ee-7235-4b41-8b77-9ab9a7e689cb" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="genetic_alterations_relationships_fk" physicalName="genetic_alterations_relationships_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP131" populated="true" UUID="2a3161cc-e9e2-4b1d-8245-178027158e4d" fk-column-ref="COL20" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL73" />
+   </relationship>
+   <relationship id="REL132" populated="true" UUID="ffa92d91-c7b0-4a7d-aeb2-bf2fe6569fc6" deferrability="7" deleteRule="3" fk-table-ref="TAB54" fkCardinality="7" identifying="false" name="sources_lnk_genes_drugs_fk" physicalName="sources_lnk_genes_drugs_fk" pk-table-ref="TAB92" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP133" populated="true" UUID="01e41e03-a409-4103-9b16-c3bdc18ae209" fk-column-ref="COL58" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL93" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB17" x="735" y="20" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB30" x="312" y="223" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB44" x="32" y="270" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB49" x="367" y="670" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB54" x="300" y="438" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB66" x="968" y="316" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB72" x="293" y="24" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB82" x="624" y="376" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB92" x="837" y="630" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB97" x="54" y="637" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL118" pkConnection="0.34545454545454546" fkConnection="0.24299065420560748" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="65"/>
+  <table-link relationship-ref="REL124" pkConnection="0.5364583333333334" fkConnection="0.4721030042918455" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL112" pkConnection="0.4857142857142857" fkConnection="0.463519313304721" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL120" pkConnection="0.732620320855615" fkConnection="0.5037037037037037" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="36"/>
+  <table-link relationship-ref="REL126" pkConnection="0.3689839572192513" fkConnection="0.7601246105919003" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL114" pkConnection="0.44761904761904764" fkConnection="0.45528455284552843" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL130" pkConnection="0.9047619047619048" fkConnection="0.21904761904761905" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL122" pkConnection="0.7433155080213903" fkConnection="0.638095238095238" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="40"/>
+  <table-link relationship-ref="REL116" pkConnection="0.703030303030303" fkConnection="0.1111111111111111" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL128" pkConnection="0.2" fkConnection="0.7555555555555555" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL132" pkConnection="0.1443850267379679" fkConnection="0.7833333333333333" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="24"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
