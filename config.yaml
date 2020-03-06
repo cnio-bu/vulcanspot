@@ -1,8 +1,5 @@
-projects : 'projects.tsv'                                      # TCGA projects to parse
-inputdir : '/raid/RAW/PAN-TCGA'                                # Where to look for said projects
-tablesdir: '/home/sagarcia/Documents/TFM/generated/tcga'       # Where to save generated tables
-plotdir  : '/home/sagarcia/Documents/TFM/generated/tcga/plots' # Where to save plots
-logdir   : 'log/test'                                          # Where to save events log.
+ccle_datasets: '/raid/vulcanspot_datasets/data/ccle' # Where to look for raw CCLE files
+
 
 # RULES MARKED AS PANDAS SC are single threaded by nature, so there is no point
 # in adding more cores, they won't go faster. Mem_mb is NOT a hard RAM limit,
